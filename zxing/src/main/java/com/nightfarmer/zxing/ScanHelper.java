@@ -22,7 +22,7 @@ public class ScanHelper {
     }
 
     public static void capture(Fragment fragment) {
-        Intent intent = new Intent(fragment.getContext(), CaptureActivity.class);
+        Intent intent = new Intent(fragment.getActivity(), CaptureActivity.class);
         fragment.startActivityForResult(intent, RequestCode);
     }
 
